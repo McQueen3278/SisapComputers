@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.harolrodriguez.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="432.0" fitWidth="686.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MenuPrincipal.png" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="25.0" prefWidth="686.0" stylesheets="@../resources/SisapComputers.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Login" />
+                  <MenuItem fx:id="btnMenuComputadoras" mnemonicParsing="false" onAction="#buttonHandleEvent" text="Computadoras" />
+                  <MenuItem fx:id="btnServidores" mnemonicParsing="false" onAction="#buttonHandleEvent" text="Servidores" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de ">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

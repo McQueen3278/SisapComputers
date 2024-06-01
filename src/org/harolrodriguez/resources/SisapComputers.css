@@ -1,0 +1,25 @@
+.menu-bar{
+    -fx-background-color: #1C618C;
+    -fx-opacity: 0.5;
+    -fx-border-width: #54ACBF;
+}
+.button1{
+    -fx-background-color: #B8E9EE;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #1C618C
+}
+.button2:hover{
+    -fx-font-size:10px;
+}
+.button3{
+    -fx-background-color: #B8E9EE;
+    -fx-border-color: #1C618C
+}
+.button4:hover{
+    -fx-front-color: #B8E9EE;
+    -fx-border-color: #1C618C;
+    -fx-background-radius: 10;
+   -fx-border-radius: 10;
+}
+

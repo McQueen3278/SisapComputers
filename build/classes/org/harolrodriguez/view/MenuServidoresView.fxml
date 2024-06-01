@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.harolrodriguez.controller.MenuServidoresController">
+   <children>
+      <ImageView fitHeight="526.0" fitWidth="864.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Servidores.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="14.0" layoutY="279.0" prefHeight="219.0" prefWidth="173.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#Agregar" prefHeight="44.0" prefWidth="168.0" stylesheets="@../resources/SisapComputers.css" text="Agregar Servidor">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass>
+            </Button>
+            <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="43.0" prefWidth="167.0" stylesheets="@../resources/SisapComputers.css" text="Editar Servidor" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass>
+            </Button>
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="42.0" prefWidth="167.0" stylesheets="@../resources/SisapComputers.css" text="Eliminar Servidor" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass>
+            </Button>
+            <Button fx:id="btnReportes" mnemonicParsing="false" onAction="#reporte" prefHeight="44.0" prefWidth="168.0" stylesheets="@../resources/SisapComputers.css" text="Reportes" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="button1" />
+                  <String fx:value="button2" />
+               </styleClass>
+            </Button>
+            <ImageView fx:id="imgAgregarS" fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/AgregarS.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEditarS" fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/EditarS.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEliminarS" fitHeight="34.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/EliminarS.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgReporte" fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../images/Reportes.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="btnBack" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#clickAtras" prefHeight="44.0" prefWidth="106.0" stylesheets="@../resources/SisapComputers.css">
+         <graphic>
+            <ImageView fx:id="imgBack" fitHeight="32.0" fitWidth="55.0" onMouseClicked="#clickAtras" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Atras.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="button3" />
+            <String fx:value="button4" />
+         </styleClass>
+      </Button>
+      <GridPane layoutX="250.0" layoutY="93.0" prefHeight="134.0" prefWidth="572.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="107.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="107.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="107.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="162.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="29.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="2.0" prefWidth="2.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="29.0" prefWidth="115.0" text="Servidor ID :" textFill="WHITE" />
+            <TextField fx:id="txtServidorID" prefHeight="25.0" prefWidth="136.0" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="110.0" text="Marca" textFill="WHITE" GridPane.rowIndex="2" />
+            <TextField fx:id="txtMarca" layoutX="109.0" layoutY="52.0" prefHeight="25.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="87.0" text="Descripción:" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="95.0" text="Tipo de Servidor:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="txtDescripcion" layoutX="63.0" layoutY="16.0" prefHeight="25.0" prefWidth="136.0" GridPane.columnIndex="3" />
+            <TextField fx:id="txtTServidor" layoutX="271.0" layoutY="16.0" prefHeight="25.0" prefWidth="136.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tblServidores" layoutX="211.0" layoutY="263.0" onMouseClicked="#seleccionarElemento" prefHeight="257.0" prefWidth="626.0">
+        <columns>
+          <TableColumn fx:id="colServidorID" prefWidth="92.0" text="servidorID" />
+          <TableColumn fx:id="colTServidor" prefWidth="96.0" text="tipoServidor" />
+            <TableColumn fx:id="colDescripcion" prefWidth="268.0" text="descripcion" />
+            <TableColumn fx:id="colMarca" prefWidth="169.0" text="marca" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
